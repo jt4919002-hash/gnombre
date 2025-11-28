@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Tienda Online</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #ff6f61;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      display: block;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .producto {
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .producto img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #ff6f61;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>¡Bienvenido a Mi Tienda Online! 🛍️</h1>
+    <p>Encuentra los mejores productos aquí</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#productos">Productos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <div class="container" id="inicio">
+    <h2>Nuestros Productos Destacados</h2>
+    <div class="productos" id="productos">
+      <div class="producto">
+        <img src="https://via.placeholder.com/200x150.png?text=Producto+1" alt="Producto 1">
+        <h3>Producto 1</h3>
+        <p>$10.00</p>
+      </div>
+      <div class="producto">
+        <img src="https://via.placeholder.com/200x150.png?text=Producto+2" alt="Producto 2">
+        <h3>Producto 2</h3>
+        <p>$20.00</p>
+      </div>
+      <div class="producto">
+        <img src="https://via.placeholder.com/200x150.png?text=Producto+3" alt="Producto 3">
+        <h3>Producto 3</h3>
+        <p>$15.00</p>
+      </div>
+    </div>
+  </div>
+
+  <footer id="contacto">
+    <p>Contacto: tienda@example.com | © 2025 Mi Tienda Online</p>
+  </footer>
+</body>
+</html>
